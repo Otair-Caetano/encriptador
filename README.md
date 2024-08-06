@@ -3,3 +3,6 @@ Projeto desenvolvido pela Alura, para testar os conhecimentos de Html e Css, dos
 ## links indicados
 ### Planejamento
 [alura](https://www.alura.com.br) 
+### Validação W3C
+[Html](https://validator.w3.org/detailed.html)
+[Css](https://jigsaw.w3.org/css-validator/)

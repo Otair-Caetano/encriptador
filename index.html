@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador - One Oracle</title>
     <meta name="description" content="Esta pagina se propõe a codificar e descodifica, textos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="img/letraE3.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,24 +13,25 @@
     <header>
         <img class="logoAlura" src="/img/logoAlura.png" alt="Logo da Alura">
     </header>
-    <main>
+    <main class="container">
         <section>
-            <textarea class="text-area" cols="41" rows="4" placeholder="Digite aqui o seu texto"></textarea>
+            <textarea id="text-area" class="text-area" cols="41" rows="4" placeholder="Digite aqui o seu texto"></textarea>
             <div class="informacao">
-                <h6>Apenas letras minúsculas e sem acento</h6>
+                <h6>&#x26A0; Apenas letras minúsculas e sem acento</h6>
     
             </div>
             <div class="botoes">
-                <button class="btn-encriptar">Criptografar</button>
-                <button class="btn-desencriptar">Descriptografar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
         </section>
             
         <section>
-            <textarea class="mensagem" cols="20" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
+            <textarea id="mensagem" class="mensagem" cols="20" rows="10"></textarea>
+            <img src="/img/bonecoAlura.png" id="bonecoAlura" class="mensagem">
+            <button id="btn-copiar" class="btn-copiar" style="display: none;">Copiar</button>
         </section>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
